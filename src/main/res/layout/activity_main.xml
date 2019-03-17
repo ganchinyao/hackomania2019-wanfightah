@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MainActivity">
+
+    
+    <ImageView
+        android:id="@+id/mainpageLogo"
+        android:layout_width="@dimen/_333sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:src="@drawable/main_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"/>
+    
+    <ImageView
+        android:id="@+id/multiplayer_signOut_Button"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/main_signin"
+        app:layout_constraintLeft_toLeftOf="@id/mainpageLogo"
+        app:layout_constraintRight_toRightOf="@id/mainpageLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_20sdp"/>
+
+    <ImageView
+        android:id="@+id/multiplayer_signIn_Button"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/main_signin"
+        app:layout_constraintLeft_toLeftOf="@id/mainpageLogo"
+        app:layout_constraintRight_toRightOf="@id/mainpageLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_20sdp"/>
+
+</android.support.constraint.ConstraintLayout>

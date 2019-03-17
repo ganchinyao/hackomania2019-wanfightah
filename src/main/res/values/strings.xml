@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Wan Fight Ah</string>
+    <string name="app_version">Version 1.1.2</string>
+
+    <!-- Popup -->
+    <string name="difficulty">Difficulty</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="hard">HARD</string>
+    <string name="insane">EXPANSION</string>
+    <string name="play">PLAY</string>
+    <string name="allcategories">Categories</string>
+    <string name="favorite">Favorites</string>
+    <string name="preferences">Preference</string>
+
+    <!-- Game Page -->
+    <string name="score">Score</string>
+    <string name="hint">Hint</string>
+    <string name="skip">Skip</string>
+    <string name="resume">Resume</string>
+    <string name="restart">Restart</string>
+    <string name="restartcolon">Restart: </string>
+    <string name="ranking">Ranking</string>
+    <string name="me">Me: </string>
+    <string name="gamepaused">Game Paused</string>
+    <string name="exit">Exit</string>
+    <string name="timeup">Times Up</string>
+    <string name="yourscore">Your Score: </string>
+    <string name="higheststreak">Highest Streak: </string>
+    <string name="hintsused">Hints Used: </string>
+    <string name="skips">Skips: </string>
+    <string name="correctwords">Correct Words: </string>
+
+    <!-- Multiplayer -->
+    <string name="signin">Sign In</string>
+    <string name="accept">Accept</string>
+    <string name="signout">Sign Out</string>
+    <string name="quickplay">Quick Play</string>
+    <string name="inviteFriends">Invite Friends</string>
+    <string name="seeInvitation">See Invitation</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="ready">Ready</string>
+    <string name="gamesetting">Spells</string>
+    <string name="signinText">Multiplayer requires Google Play Game Service.\nPlease sign in to your Google Play Game Service account.</string>
+    <string name="currentposition">Current Position</string>
+    <string name="exittitle">Exit</string>
+    <string name="exitdialog">Are you sure you want to exit the game?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="menu">Menu</string>
+    <string name="getready">Get Ready</string>
+    <string name="rematch">Rematch</string>
+    <string name="rematchgame_desc">Your opponent has requested for a rematch. Accept the challenge?</string>
+
+    <!-- Test multiplayer -->
+    <string name="game_title">Button Clicker 2000!</string>
+    <string name="game_blurb">A sample game that tests your ability to click a button. Can you click faster than your friends? Only one way to find out! To play this game with friends, you must sign in with Google.</string>
+    <string name="single_player">Single Player</string>
+    <string name="single_player_explanation">Get some practice!</string>
+    <string name="quick_game">Quick game</string>
+    <string name="invite_players">Invite friends</string>
+    <string name="see_invitations">See invitations</string>
+    <string name="quick_game_explanation">Challenge a random opponent.</string>
+    <string name="invite_players_explanation">Invite friends to play a game.</string>
+    <string name="see_invitations_explanation">See who is inviting you right now.</string>
+    <string name="inv_popup_text">Incoming invitation!</string>
+    <string name="accept_popup_invite">Accept!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="instructions">Click the button as fast as you can!</string>
+    <string name="game_problem">An error occurred while starting the game. Please try again.</string>
+    <string name="click_me">Click me!</string>
+    <string name="is_inviting_you">is challenging you to a game!</string>
+    <string name="signin_other_error">There was an issue with sign in. Please try again later.</string>
+    <string name="status_exception_error">%1$s (status %2$d). %3$s.</string>
+
+    <string name="status_multiplayer_error_not_trusted_tester">Anyone you invite must be a trusted tester</string>
+    <string name="match_error_already_rematched">This rematch has already been started!</string>
+    <string name="client_reconnect_required">Games client reconnect required</string>
+    <string name="network_error_operation_failed">Network error: Operation failed</string>
+    <string name="internal_error">Internal error</string>
+    <string name="unexpected_status">Unexpected status: %1$s</string>
+    <string name="match_error_inactive_match">This match is inactive.</string>
+    <string name='match_error_locally_modified'>This match has locally-modified data.  This operation cannot be performed until the match is sent to the server.</string>
+    <string name="score_label">%1$s - Me</string>
+
+    <string name="select_conflicted_game">Select state to sign in</string>
+    <string name="format_days_ago">%d days ago</string>
+    <string name="format_hours_ago">%d hours ago</string>
+    <string name="format_minutes_ago">%d minutes ago</string>
+    <string name="format_seconds_ago">%d seconds ago</string>
+    <string name="moments_ago">moments ago</string>
+    <string name="snapshotimage_description">Saved image for snapshot</string>
+    <string name="write_snapshot_error">There was a problem writing the snapshot!</string>
+    <string name="error_opening_metadata">There was a problem opening the snapshot metadata!</string>
+    <string name="error_opening_filename">There was a problem opening the current save file!</string>
+    <string name="error_closing_metadata">There was a problem waiting for the snapshot metadata to close!</string>
+    <string name="error_closing_filename">There was a problem waiting for the current save file to close!</string>
+</resources>

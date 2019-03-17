@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multiplayer_mainPage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/mainpageLogo"
+            android:layout_width="@dimen/_333sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:src="@drawable/main_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/multiplayer_signIn_Button"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/main_signin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/mainpageLogo"
+            app:layout_constraintRight_toRightOf="@id/mainpageLogo" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- @@@@@@ popup selection @@@@@@@-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multiplayer_popupSelection_overallLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/popup_difficultyImageView"
+            android:layout_width="@dimen/_113sdp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@id/guidelineTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+
+        <View
+            android:id="@+id/popup_easyButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/popup_mediumButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/popup_difficultyImageView" />
+
+        <View
+            android:id="@+id/popup_mediumButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/popup_easyButton"
+            app:layout_constraintEnd_toStartOf="@+id/popup_hardButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/popup_easyButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_easyButton" />
+
+        <View
+            android:id="@+id/popup_hardButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/popup_easyButton"
+            app:layout_constraintEnd_toStartOf="@+id/popup_insaneButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/popup_mediumButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_easyButton" />
+
+        <View
+            android:id="@+id/popup_insaneButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/popup_easyButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2a"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/popup_hardButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_easyButton" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <ImageView
+            android:id="@+id/popup_easyImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_easyButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_easyButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_easyButton" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/popup_easyTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="@string/easy"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_18sdp"
+            app:autoSizeMaxTextSize="@dimen/_18sdp"
+            app:autoSizeMinTextSize="@dimen/_8sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_easyButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_easyButton"
+            app:layout_constraintTop_toBottomOf="@+id/popup_easyImageView" />
+
+        <ImageView
+            android:id="@+id/popup_mediumImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_mediumButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_mediumButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_mediumButton" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/popup_mediumTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="@string/medium"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_18sdp"
+            app:autoSizeMaxTextSize="@dimen/_18sdp"
+            app:autoSizeMinTextSize="@dimen/_8sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_mediumButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_mediumButton"
+            app:layout_constraintTop_toBottomOf="@+id/popup_mediumImageView" />
+
+        <ImageView
+            android:id="@+id/popup_hardImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_hardButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_hardButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_hardButton" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/popup_hardTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="@string/hard"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_18sdp"
+            app:autoSizeMaxTextSize="@dimen/_18sdp"
+            app:autoSizeMinTextSize="@dimen/_8sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_hardButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_hardButton"
+            app:layout_constraintTop_toBottomOf="@+id/popup_hardImageView" />
+
+        <ImageView
+            android:id="@+id/popup_insaneImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_insaneButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_insaneButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_insaneButton" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/popup_insaneTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="@string/insane"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_18sdp"
+            app:autoSizeMaxTextSize="@dimen/_18sdp"
+            app:autoSizeMinTextSize="@dimen/_8sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/popup_insaneButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_insaneButton"
+            app:layout_constraintTop_toBottomOf="@+id/popup_insaneImageView" />
+
+
+        <View
+            android:id="@+id/categorybackgroundTop"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popup_easyButton" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/popup_tablayout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#00000000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/categorybackgroundBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextAppearance="@style/popup_tablayout"
+            app:tabTextColor="@color/verylight_gray">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabChats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/allcategories" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gamesetting" />
+
+
+        </android.support.design.widget.TabLayout>
+
+        <View
+            android:id="@+id/categorybackgroundBottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categorybackgroundTop" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/popup_viewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/popup_startButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_tablayout" />
+
+        <ImageView
+            android:id="@+id/popup_startButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:alpha="0.5"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/playbutton_selector" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/popup_startTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="@string/ready"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/popup_startButton"
+            app:layout_constraintEnd_toEndOf="@+id/popup_startButton"
+            app:layout_constraintStart_toStartOf="@+id/popup_startButton"
+            app:layout_constraintTop_toTopOf="@+id/popup_startButton" />
+
+
+        <LinearLayout
+            android:id="@+id/multiplayer_playerIconLinearLayoutTop"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popup_difficultyImageView"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/multiplayer_playerIconLinearLayoutBottom"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/popup_easyButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popup_difficultyImageView">
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <!--@@@@@ For multiplayer handshake connections @@@@@@@-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multiplayer_handshake_overallLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/multiplayer_monsterBackground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <!-- Multiplayer signed in start from here-->
+        <ImageView
+            android:id="@+id/multiplayer_quickPlay_Button2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_45sdp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/guideline7"
+            app:layout_constraintVertical_bias="0.110000014"
+            app:srcCompat="@drawable/multiplayer_generalbutton_selector" />
+
+
+        <ImageView
+            android:id="@+id/multiplayer_inviteFriends_Button2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_45sdp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:srcCompat="@drawable/multiplayer_generalbutton_selector" />
+
+        <ImageView
+            android:id="@+id/multiplayer_seeInvitation_Button2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_45sdp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:srcCompat="@drawable/multiplayer_generalbutton_selector" />
+
+        <ImageView
+            android:id="@+id/multiplayer_signOut_Button2"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintEnd_toEndOf="@+id/multiplayer_monsterBackground"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/multiplayer_monsterBackground"
+            app:srcCompat="@drawable/multiplayer_signin_selector" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/multiplayer_signOutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signout"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/multiplayer_quickPlayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/quickplay"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_quickPlayIcon"
+            app:layout_constraintStart_toEndOf="@+id/multiplayer_quickPlayIcon"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_quickPlayIcon" />
+
+        <ImageView
+            android:id="@+id/multiplayer_quickPlayIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/battle" />
+
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/multiplayer_inviteFriendsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/inviteFriends"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_inviteFriendHighFiveIcon"
+            app:layout_constraintStart_toEndOf="@+id/multiplayer_inviteFriendHighFiveIcon"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_inviteFriendHighFiveIcon" />
+
+        <ImageView
+            android:id="@+id/multiplayer_inviteFriendHighFiveIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:visibility="gone"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:srcCompat="@drawable/highfive" />
+
+        <ImageView
+            android:id="@+id/multiplayer_seeInvitationMailIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:visibility="gone"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:srcCompat="@drawable/mail" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/multiplayer_seeInvitationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/seeInvitation"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplayer_seeInvitationMailIcon"
+            app:layout_constraintStart_toEndOf="@+id/multiplayer_seeInvitationMailIcon"
+            app:layout_constraintTop_toTopOf="@+id/multiplayer_seeInvitationMailIcon" />
+
+        <ImageView
+            android:id="@+id/multiplayer_backbutton"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_7sdp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backicon" />
+
+        <RelativeLayout
+            android:id="@+id/multiplayer_invitationRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@color/primary_red"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/multiplayer_invitationAcceptButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/accept"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/multiplayer_invitation_questionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/multiplayer_invitationAcceptButton"
+                android:gravity="center"
+                android:text="You have been invited by your friend. Click to accept now."
+                android:textColor="@color/verylight_gray"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.says.hackomonia.myapplication.CustomTextView
+                android:id="@+id/signinHelpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_50sdp"
+                android:paddingRight="@dimen/_50sdp"
+                android:text="@string/signinText"
+                android:textColor="#eeeeee"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="visible"
+                app:layout_constraintVertical_bias="0.36" />
+
+            <TextView
+                android:id="@+id/signInTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="@string/signin"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/googleIconImageView"
+                app:layout_constraintTop_toTopOf="@+id/multiplayer_signIn_Button" />
+
+            <ImageView
+                android:id="@+id/googleIconImageView"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/multiplayer_signIn_Button"
+                app:layout_constraintHorizontal_bias="0.29"
+                app:layout_constraintStart_toStartOf="@+id/multiplayer_signIn_Button"
+                app:layout_constraintTop_toTopOf="@+id/multiplayer_signIn_Button"
+                app:srcCompat="@drawable/googleg_standard_color_18" />
+
+        </RelativeLayout>
+
+        <!-- Multiplayer signed in ends here-->
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/multiplayer_multiplayerversus"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <ProgressBar
+        android:id="@+id/multiplayer_waitscreenprogressbar"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:indeterminate="true"
+        android:theme="@style/waitscreenprogressbar"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.says.hackomonia.myapplication.CustomTextView
+        android:id="@+id/multiplayer_waitscreen_loadingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading"
+        android:textColor="@color/light_brown"
+        android:textSize="@dimen/_16sdp"
+        android:visibility="gone" />
+
+    <!-- zAZZZŽZAZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ--><!-- Multiplayer signed in start from here-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multiplayer_handshake_overallLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/comeahlogo"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/comeahlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/multiplayer_quickPlay_Button"
+            android:layout_width="@dimen/_287sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/quick_play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/comeahlogo" />
+
+        <ImageView
+            android:id="@+id/multiplayer_inviteFriends_Button"
+            android:layout_width="@dimen/_287sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/invite_friends"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/multiplayer_quickPlay_Button" />
+
+        <ImageView
+            android:id="@+id/multiplayer_seeInvitation_Button"
+            android:layout_width="@dimen/_287sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/see_invites"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/multiplayer_inviteFriends_Button" />
+
+        <ImageView
+            android:id="@+id/multiplayer_signOut_Button"
+            android:layout_width="@dimen/_83sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/exit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <!-- Multiplayer signed in ends here-->
+
+
+    <!----><!----><!----><!----><!----><!----><!-- @@@@@@@@@@@@@ Actual game content starts here @@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multiplayer_actualGameOverallLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/game_scoreimageview"
+            android:layout_width="@dimen/_87sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gamescorebackground" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/game_scoreTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_22sdp"
+            android:shadowColor="#D7CCC8"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_scoreimageview"
+            app:layout_constraintEnd_toEndOf="@+id/game_scoreimageview"
+            app:layout_constraintStart_toStartOf="@+id/game_scoreimageview"
+            app:layout_constraintTop_toTopOf="@+id/game_scoreimageview" />
+
+
+        <ImageView
+            android:id="@+id/player1icon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/player1"
+            app:layout_constraintStart_toEndOf="@id/game_scoreimageview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/player2icon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/player2"
+            app:layout_constraintStart_toEndOf="@id/player1icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/player3icon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:src="@drawable/player1"
+            app:layout_constraintStart_toEndOf="@id/player2icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/player1Megaphone"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/megaphone"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/player1icon"
+            app:layout_constraintTop_toTopOf="@id/player1icon" />
+
+        <ImageView
+            android:id="@+id/player2Megaphone"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/megaphone"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/player2icon"
+            app:layout_constraintTop_toTopOf="@id/player2icon" />
+
+        <ImageView
+            android:id="@+id/player3Megaphone"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/megaphone"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/player3icon"
+            app:layout_constraintTop_toTopOf="@id/player3icon" />
+
+        <ImageView
+            android:id="@+id/player1VoteButton"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/vote"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/player1icon"
+            app:layout_constraintEnd_toEndOf="@id/player1icon"
+            app:layout_constraintStart_toStartOf="@id/player1icon" />
+
+
+        <ImageView
+            android:id="@+id/player2VoteButton"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/vote"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/player2icon"
+            app:layout_constraintEnd_toEndOf="@id/player2icon"
+            app:layout_constraintStart_toStartOf="@id/player2icon" />
+
+
+        <ImageView
+            android:id="@+id/player3VoteButton"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/vote"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/player3icon"
+            app:layout_constraintEnd_toEndOf="@id/player3icon"
+            app:layout_constraintStart_toStartOf="@id/player3icon" />
+
+        <ImageView
+            android:id="@+id/card1_RecordButton"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/record"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/card1"
+            app:layout_constraintEnd_toEndOf="@id/card1"
+            app:layout_constraintStart_toStartOf="@id/card1" />
+
+        <ImageView
+            android:id="@+id/card2_RecordButton"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/record"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/card2"
+            app:layout_constraintEnd_toEndOf="@id/card2"
+            app:layout_constraintStart_toStartOf="@id/card2" />
+
+        <ImageView
+            android:id="@+id/card3_RecordButton"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/record"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/card3"
+            app:layout_constraintEnd_toEndOf="@id/card3"
+            app:layout_constraintStart_toStartOf="@id/card3" />
+
+        <ImageView
+            android:id="@+id/card4_RecordButton"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/record"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/card4"
+            app:layout_constraintEnd_toEndOf="@id/card4"
+            app:layout_constraintStart_toStartOf="@id/card4" />
+
+        <ImageView
+            android:id="@+id/card5_RecordButton"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/record"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/card5"
+            app:layout_constraintEnd_toEndOf="@id/card5"
+            app:layout_constraintStart_toStartOf="@id/card5" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/player1_scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_31sdp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@id/player1icon"
+            app:layout_constraintEnd_toEndOf="@id/player1icon" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/player2_scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_17sdp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="@id/player2icon"
+            app:layout_constraintEnd_toEndOf="@id/player2icon" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/player3_scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_31sdp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@id/player3icon"
+            app:layout_constraintEnd_toEndOf="@id/player3icon" />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/pause_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/card1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:background="@drawable/card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/card2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/card2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/card3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/card1" />
+
+        <ImageView
+            android:id="@+id/card3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/card4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/card2" />
+
+        <ImageView
+            android:id="@+id/card4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/card5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/card3" />
+
+        <ImageView
+            android:id="@+id/card5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/card4" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/questionText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="This is a test question blah blah blah blah his is a test question blah blah blah blah b  blah blah"
+            android:textColor="#ffec4a"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toTopOf="@id/card1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/player1icon" />
+
+        <EditText
+            android:id="@+id/edittext_card1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/card1_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card1"
+            app:layout_constraintStart_toStartOf="@id/card1"
+            app:layout_constraintTop_toTopOf="@id/card1" />
+
+        <EditText
+            android:id="@+id/edittext_card2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/card2_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card2"
+            app:layout_constraintStart_toStartOf="@id/card2"
+            app:layout_constraintTop_toTopOf="@id/card2" />
+
+        <EditText
+            android:id="@+id/edittext_card3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/card3_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card1"
+            app:layout_constraintStart_toStartOf="@id/card3"
+            app:layout_constraintTop_toTopOf="@id/card3" />
+
+        <EditText
+            android:id="@+id/edittext_card4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/card4_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card4"
+            app:layout_constraintStart_toStartOf="@id/card4"
+            app:layout_constraintTop_toTopOf="@id/card4" />
+
+        <EditText
+            android:id="@+id/edittext_card5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/card5_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card5"
+            app:layout_constraintStart_toStartOf="@id/card5"
+            app:layout_constraintTop_toTopOf="@id/card5" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/card1TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="go see where look look"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            app:autoSizeMinTextSize="@dimen/_6sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@id/card1_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card1"
+            app:layout_constraintStart_toStartOf="@id/card1"
+            app:layout_constraintTop_toTopOf="@id/card1" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/card2TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="go see where look look"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            app:autoSizeMinTextSize="@dimen/_6sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@id/card2_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card2"
+            app:layout_constraintStart_toStartOf="@id/card2"
+            app:layout_constraintTop_toTopOf="@id/card2" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/card3TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="go see where look look"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            app:autoSizeMinTextSize="@dimen/_6sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@id/card3_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card3"
+            app:layout_constraintStart_toStartOf="@id/card3"
+            app:layout_constraintTop_toTopOf="@id/card3" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/card4TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="go see where look look"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            app:autoSizeMinTextSize="@dimen/_6sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@id/card4_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card4"
+            app:layout_constraintStart_toStartOf="@id/card4"
+            app:layout_constraintTop_toTopOf="@id/card4" />
+
+        <com.says.hackomonia.myapplication.CustomTextView
+            android:id="@+id/card5TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="go see where look look dasdas dasdasdasdd asdas asdasdas"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            app:autoSizeMinTextSize="@dimen/_6sdp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@id/card5_RecordButton"
+            app:layout_constraintEnd_toEndOf="@id/card5"
+            app:layout_constraintStart_toStartOf="@id/card5"
+            app:layout_constraintTop_toTopOf="@id/card5" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

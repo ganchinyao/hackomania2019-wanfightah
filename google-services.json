@@ -1,0 +1,43 @@
+// Replace this with your file generated from firebase
+{
+  "project_info": {
+    "project_number": "1234",
+    "firebase_url": "PUT_YOUR_FILE",
+    "project_id": "PUT_YOUR_FILE",
+    "storage_bucket": "PUT_YOUR_FILE"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243567899112:android:1c234f56c78942c3",
+        "android_client_info": {
+          "package_name": "com.hackomania.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "PUT_YOUR_FILE",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "PUT_YOUR_FILE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
